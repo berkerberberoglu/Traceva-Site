@@ -7,7 +7,7 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #030c1a; color: #e2e8f0; }
-    nav { background: rgba(8,18,48,0.95); padding: 16px 32px; display: flex; gap: 32px; align-items: center; }
+    nav { background: rgba(8,18,48,0.95); padding: 16px 32px; display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
     nav a { color: #93c5fd; text-decoration: none; font-size: 15px; }
     nav a:hover { color: #fff; }
     nav .brand { color: #fff; font-weight: 700; font-size: 18px; margin-right: auto; }
@@ -17,6 +17,7 @@
     h2 { font-size: 18px; font-weight: 700; color: #93c5fd; margin: 36px 0 12px; }
     p { color: #94a3b8; font-size: 15px; line-height: 1.8; margin-bottom: 12px; }
     a { color: #3b82f6; }
+    .divider { border: none; border-top: 1px solid #1e293b; margin: 48px 0; }
     footer { text-align: center; padding: 32px; color: #334155; font-size: 13px; border-top: 1px solid #0f172a; }
     footer a { color: #3b82f6; text-decoration: none; margin: 0 12px; }
   </style>
@@ -41,8 +42,8 @@
 
     <h2>Analytics and Crash Reporting</h2>
     <p>Traceva uses Firebase Analytics and Firebase Crashlytics, services provided by Google LLC, to collect anonymous usage statistics and crash reports. This data helps us understand how the App is used and improve its stability.</p>
-    <p>The data collected through Firebase is anonymous and may include device model, iOS version, country, session duration, and feature usage patterns. No personally identifiable information is included.</p>
-    <p>Google's privacy practices are described at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+    <p>The data collected through Firebase may include device model, iOS version, country, session duration, and feature usage patterns. Firebase data is used in an aggregated or anonymous form and is not used by Traceva to directly identify individual users.</p>
+    <p>Google's privacy practices are described at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</p>
 
     <h2>Camera and Photo Library</h2>
     <p>Traceva requests access to your camera and photo library solely to enable its core drawing and tracing features. Images you select are processed on your device and are never uploaded to any server.</p>
@@ -59,11 +60,35 @@
     <h2>Contact</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:bberberoglu@sabanciuniv.edu">bberberoglu@sabanciuniv.edu</a></p>
 
-    <h2>Gizlilik Politikası (Türkçe)</h2>
-    <p>Traceva uygulaması, Berker Berberoğlu tarafından geliştirilmiştir. Bu politika, uygulamayı kullandığınızda bilgilerin nasıl ele alındığını açıklar.</p>
-    <p>Traceva, kullanıcılardan kişisel bilgi toplamaz. Uygulama; Firebase Analytics ve Firebase Crashlytics aracılığıyla anonim kullanım istatistikleri ve çökme raporları toplar. Bu veriler kişisel olarak tanımlanamaz ve yalnızca uygulamayı iyileştirmek amacıyla kullanılır.</p>
-    <p>Kamera ve fotoğraf kitaplığı erişimi yalnızca çizim özelliği için kullanılır; görüntüler hiçbir sunucuya yüklenmez. Uygulama 13 yaş altı çocuklara yönelik değildir.</p>
-    <p>Sorularınız için: <a href="mailto:bberberoglu@sabanciuniv.edu">bberberoglu@sabanciuniv.edu</a></p>
+    <hr class="divider">
+
+    <h1>Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 8 Temmuz 2026</p>
+
+    <p>Traceva uygulaması Berker Berberoğlu tarafından geliştirilmiştir. Bu Gizlilik Politikası, uygulamayı kullandığınızda bilgilerinizin nasıl ele alındığını açıklar.</p>
+
+    <h2>Toplamadığımız Bilgiler</h2>
+    <p>Traceva, kullanıcıların hesap oluşturmasını veya kişisel bilgi sağlamasını gerektirmez. Uygulama; adınızı, e-posta adresinizi veya başka herhangi bir kişisel veriyi doğrudan toplamaz.</p>
+
+    <h2>Analitik ve Çökme Raporlama</h2>
+    <p>Traceva, anonim kullanım istatistikleri ve çökme raporları toplamak için Google LLC tarafından sağlanan Firebase Analytics ve Firebase Crashlytics hizmetlerini kullanır. Bu veriler, uygulamanın nasıl kullanıldığını anlamamıza ve kararlılığını iyileştirmemize yardımcı olur.</p>
+    <p>Firebase aracılığıyla toplanan veriler; cihaz modeli, iOS sürümü, ülke, oturum süresi ve özellik kullanım kalıpları gibi bilgileri içerebilir. Firebase verileri yalnızca toplu veya anonim biçimde kullanılır ve Traceva tarafından bireysel kullanıcıları doğrudan tanımlamak amacıyla kullanılmaz.</p>
+    <p>Google'ın gizlilik uygulamaları şu adreste açıklanmaktadır: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+    <h2>Kamera ve Fotoğraf Kitaplığı</h2>
+    <p>Traceva, yalnızca temel çizim ve izleme özelliklerini etkinleştirmek amacıyla kameranıza ve fotoğraf kitaplığınıza erişim ister. Seçtiğiniz görüntüler yalnızca cihazınızda işlenir ve hiçbir sunucuya yüklenmez.</p>
+
+    <h2>Çocukların Gizliliği</h2>
+    <p>Traceva, 13 yaşın altındaki çocuklara yönelik değildir ve çocuklardan bilerek kişisel bilgi toplamaz.</p>
+
+    <h2>Veri Saklama</h2>
+    <p>Firebase aracılığıyla toplanan anonim analitik ve çökme verileri, Google'ın veri saklama politikalarına uygun olarak saklanır.</p>
+
+    <h2>Bu Politikadaki Değişiklikler</h2>
+    <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş bir tarihle bu sayfada yayınlanacaktır.</p>
+
+    <h2>İletişim</h2>
+    <p>Bu Gizlilik Politikası hakkında sorularınız için lütfen bizimle iletişime geçin: <a href="mailto:bberberoglu@sabanciuniv.edu">bberberoglu@sabanciuniv.edu</a></p>
   </div>
 
   <footer>
